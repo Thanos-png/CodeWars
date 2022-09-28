@@ -10,35 +10,13 @@
 # Solution:
 
 def likes(names):
-    num_names = len(names)
-    result = ""
-    if num_names == 0:
-        result = "no one likes this"
-    elif num_names == 1:
-        result = names[0] + " likes this"
-    elif num_names == 2:
-        result = names[0] + " and " + names[1] + " like this"
-    elif num_names == 3:
-        result = names[0] + ", " + names[1] + " and " + names[2] + " like this"
+    if len(names) == 0:
+        return "no one likes this"
+    elif len(names) == 1:
+        return "{} likes this".format(names[0])
+    elif len(names) == 2:
+        return "{} and {} like this".format(names[0],names[1])
+    elif len(names) == 3:
+        return "{}, {} and {} like this".format(names[0],names[1],names[2])
     else:
-        magic_num = num_names - 2
-        result = names[0] + ", " + names[1] + " and " + str(magic_num) + " others like this"
-    return result
-
-
-def main():
-    test_dictionary = {
-        'names_0': [],
-        'names_1': ["Peter"],
-        'names_2': ["Jacob", "Alex"],
-        'names_3': ["Max", "John", "Mark"],
-        'names_4': ["Alex", "Jacob", "Mark", "Max"]
-    }
-
-    for i in range(5):
-        result = likes(test_dictionary.get('names_' + str(i)))
-        print(result)
-
-
-if __name__ == '__main__':
-    main()
+        return "{}, {} and {} others like this".format(names[0],names[1], (len(names)-2))
