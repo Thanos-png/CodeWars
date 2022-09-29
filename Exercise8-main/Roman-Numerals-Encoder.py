@@ -26,7 +26,6 @@
 
 def solution(n):
     result = ""
-    length = len(str(n))
     x1 = n // 1000
     x0 = n % 1000
     x2 = x0 // 100
@@ -85,4 +84,3 @@ def solution(n):
                 result += "I"
                 x4 -= 1
     return result
-  
