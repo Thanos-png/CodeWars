@@ -1,5 +1,5 @@
 # Python exercise_11
-### Find the odd int
+### Find the odd int(6kyu)
 
 
 
