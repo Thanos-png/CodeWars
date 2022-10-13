@@ -1,5 +1,5 @@
 # Python exercise_17
-### Is the King in check?
+### Is the King in check?(5kyu)
 
 
 
