@@ -1,4 +1,4 @@
-# Python exercise_18
+# Python exercise_17
 ### Football - Yellow and Red Cards(6kyu)
 
 
